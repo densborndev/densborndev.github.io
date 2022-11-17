@@ -2,10 +2,25 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="/style.css">
-		<title>Abgabe</title>
+		<title>Seminarbeiten - Abgabesystem</title>
 	</head>
 	<body>
-		<h1>Abgabeseite</h1>
-
+		<h1>Seminarbeiten - Abgabesystem</h1>
+		<p>Einreichungsfrist: ####-##-##</p>
+		<div>
+			<fieldset>
+				<form action="" target="foutput">
+					<legend>Abgabe</legend>
+					<label for="ftitle">Titel der Arbeit:</label>
+					<input type="text" id="ftitle" name="ftitle" placeholder="Seminararbeit über x von y">
+					<br>
+					<label for="ffile">Seminararbeit:</label>
+					<input type="file" id="ffile" name="ffile">
+					<br>
+					<input type="submit" value="Einreichen">
+				</form>
+			</fieldset>
+			<iframe src="" name="foutput"></iframe>
+		</div>
 	</body>
 </html>
