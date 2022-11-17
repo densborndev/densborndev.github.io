@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Seminarbeiten - Review</title>
+	</head>
+	<body>
+		<h1>Seminarbeiten - Review</h1>
+		<p>Reviewfrist: ####-##-##</p>
+		<div>
+			<fieldset>
+				<form action="dummy_success.html" target="foutput">
+					<legend>Abgabe</legend>
+					<label for="ftitle">Titel der Arbeit:</label>
+					<input type="text" id="ftitle" name="ftitle" placeholder="Seminararbeit über x von y" required>
+					<br>
+					<label for="fname">Name (Reviewer):</label>
+					<input type="text" id="fname" name="fname" placeholder="Eigener Name" required>
+					<br>
+					<label for="fname">Zusammenfassung der Arbeit:</label>
+					<input type="text" id="fname" name="fname" placeholder="Zusammenfassung" required>
+					<br>
+					<label for="freview">Review:</label>
+					<br>
+					<textarea name="freview" placeholder="Ihre Review..." required></textarea>
+					<br>
+					<label for="fscore">Gesamtbewertung:</label>
+					<input list="lscore" id="fscore" name="fscore" placeholder="Auswählen..." required>
+					<datalist id="lscore">
+						<option value="Muss im Prinzip neu geschrieben werden">
+						<option value="Erfordert umfangreiche Nachbesserungen">
+						<option value="Erfordert einige Nachbesserungen">
+						<option value="Erfordert nur einige kleinere Nachbesserungen">
+					</datalist>
+					<br>
+					<label for="fcomment">Kommentar:</label>
+					<br>
+					<textarea name="fcomment" placeholder="Ihr Kommentar..." required></textarea>
+					<br>
+					<input type="submit" value="Einreichen">
+				</form>
+			</fieldset>
+			<iframe src="" name="foutput"></iframe>
+		</div>
+	</body>
+</html>

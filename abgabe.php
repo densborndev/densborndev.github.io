@@ -1,1 +1,0 @@
-Daten erfolgreich übermittelt.
