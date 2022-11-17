@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="/style.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
 		<title>Seminarbeiten - Abgabesystem</title>
 	</head>
 	<body>
@@ -9,13 +9,13 @@
 		<p>Einreichungsfrist: ####-##-##</p>
 		<div>
 			<fieldset>
-				<form action="" target="foutput">
+				<form action="abgabe.php" target="foutput">
 					<legend>Abgabe</legend>
 					<label for="ftitle">Titel der Arbeit:</label>
-					<input type="text" id="ftitle" name="ftitle" placeholder="Seminararbeit über x von y">
+					<input type="text" id="ftitle" name="ftitle" placeholder="Seminararbeit über x von y" required>
 					<br>
 					<label for="ffile">Seminararbeit:</label>
-					<input type="file" id="ffile" name="ffile">
+					<input type="file" id="ffile" name="ffile" required>
 					<br>
 					<input type="submit" value="Einreichen">
 				</form>
